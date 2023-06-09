@@ -23,7 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: alpha_blog_development
+  database: training
+  username: christytraining
+  password: christy123
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +59,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: alpha_blog_test
+  database: training
+  username: christytraining
+  password: christy123
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: alpha_blog_production
-  username: alpha_blog
-  password: <%= ENV["ALPHA_BLOG_DATABASE_PASSWORD"] %>
+  database: training
+  username: christytraining
+  password: christy123
